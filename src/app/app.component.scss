@@ -1,0 +1,32 @@
+@import "../assets/colors";
+
+#intro {
+  color: $po-black;
+  margin-top: 20%;
+  overflow: hidden;
+  & #name {
+    position: relative;
+    top: 40%;
+    left: 55%;
+    font-size: 52px;
+  }
+  & .lefty {
+    &#address {
+      margin-top: 5px;
+    }
+    &#fullstack {
+      margin-top: 5px;
+    }
+    position: relative;
+    top: 40%;
+    left: 50%;
+    font-size: 30px;
+  }
+  & #email, #phone {
+    position: relative;
+    top: 40%;
+    left: 55%;
+    font-size: 30px;
+  }
+}
+
