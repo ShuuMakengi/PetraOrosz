@@ -1,8 +1,10 @@
-@import "../assets/colors";
+@import "../assets/scss/colors";
+@import "../assets/scss/fonts";
 
 #intro {
   color: $po-black;
-  margin-top: 20%;
+  font-family: Hepta;
+  letter-spacing: 0.2em;
   overflow: hidden;
   & #name {
     position: relative;
@@ -10,23 +12,22 @@
     left: 55%;
     font-size: 52px;
   }
-  & .lefty {
+  & .detail {
     &#address {
       margin-top: 5px;
+      left: 46%;
     }
     &#fullstack {
       margin-top: 5px;
+      margin-bottom: 40px;
+      left: 50%;
+    }
+    &.contact {
+      left: 55%;
     }
     position: relative;
     top: 40%;
-    left: 50%;
     font-size: 30px;
   }
-  & #email, #phone {
-    position: relative;
-    top: 40%;
-    left: 55%;
-    font-size: 30px;
-  }
-}
 
+}

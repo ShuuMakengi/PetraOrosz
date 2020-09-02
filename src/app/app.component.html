@@ -1,7 +1,21 @@
-<div id="intro">
-  <div id="name">Petra Orosz</div>
-  <div class="lefty" id="fullstack">full stack developer</div>
-  <div id="email">{{email}}</div>
-  <div id="phone">{{phone}}</div>
-  <div class="lefty" id="address">Den Haag, Nederlands</div>
+<div [style.background-color]="bgColor" style="transition: all 2s ease-in;">
+  <div id="intro" #intro class="po-page">
+    <div id="name">Petra Orosz</div>
+    <div class="detail" id="fullstack">full stack developer</div>
+    <div class="detail contact" id="email">{{email}}</div>
+    <div class="detail contact" id="phone">{{phone}}</div>
+    <div class="detail" id="address">Den Haag, Nederlands</div>
+  </div>
+  <div #about_me class="po-page">
+    CNW AND PROGMASTER ARE COOL
+  </div>
+  <div id="companies" class="po-page">
+    CNW AND PROGMASTER ARE COOL
+  </div>
+  <div id="skills" class="po-page">
+    CNW AND PROGMASTER ARE COOL
+  </div>
+  <div id="contact" class="po-page">
+    CNW AND PROGMASTER ARE COOL
+  </div>
 </div>

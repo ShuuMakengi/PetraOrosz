@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import "assets/colors";
+@import "assets/scss/colors";
 body {
-  background-color: $po-light-blue;
+  margin: 0;
+  background-image: radial-gradient($po-gray, $po-light-blue);
+}
+.po-page {
+  height: 100vh;
 }
