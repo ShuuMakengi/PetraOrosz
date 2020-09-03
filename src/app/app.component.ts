@@ -12,11 +12,20 @@ export class AppComponent {
   phone = '+36 30 2958 122';
   @ViewChild('intro') intro;
   @ViewChild('about_me') aboutMe;
+  @ViewChild('companies') companies;
+  @ViewChild('skills') skills;
+  @ViewChild('contact') contact;
   bgColor: string = 'transparent';
   @HostListener('window:scroll') onScroll(e: Event): void {
     if (this.checkvisible(this.aboutMe)) {
       this.bgColor = '#5B6DA0';
     } else if (this.checkvisible(this.intro)) {
+      this.bgColor = 'transparent';
+    } else if (this.checkvisible(this.companies)) {
+      this.bgColor = '#222127';
+    } else if (this.checkvisible(this.skills)) {
+      this.bgColor = '#A6BFE0';
+    } else if (this.checkvisible(this.contact)) {
       this.bgColor = 'transparent';
     }
   }
